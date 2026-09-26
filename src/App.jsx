@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 
 // Root App component — manages dark mode state and renders all sections
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
 
   const toggleDarkMode = () => setDarkMode((prev) => !prev)
 
