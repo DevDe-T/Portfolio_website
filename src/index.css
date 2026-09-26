@@ -1,0 +1,23 @@
+/* Tailwind CSS v4 — import the whole library */
+@import "tailwindcss";
+
+/* Enable class-based dark mode (.dark on parent triggers dark: variants) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Apply Inter font globally */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom utilities for section padding consistency */
+@layer utilities {
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
